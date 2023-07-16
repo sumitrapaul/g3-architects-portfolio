@@ -133,6 +133,23 @@
                         font-size: 1.25rem;
                         margin-top: 5px;
                     }
+                    /* sponsors style */
+                    
+                    .sponsors {
+                        text-align: center;
+                    }
+                    
+                    .sponsors-img-container {
+                        margin-top: 50px;
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        gap: 40px;
+                    }
+                    
+                    .sponsors-img-container img {
+                        width: 165px;
+                    }
                     /* responsive styles */
                     /* mobile device */
                     
@@ -141,15 +158,21 @@
                             padding: 20px;
                         }
                         nav,
-                        .teams-container {
+                        .teams-container,
+                        .facts-card-container,
+                        .sponsors-img-container {
                             flex-direction: column;
                         }
                         .teams-img-container {
                             grid-template-columns: 1fr;
                         }
-                        .teams-content {
+                        .teams-content,
+                        .facts-card-container {
                             padding-left: 20px;
                             padding-right: 20px;
+                        }
+                        .facts-card-container {
+                            gap: 20px;
                         }
                     }
                     /* medium device */
@@ -159,7 +182,8 @@
                             padding: 50px;
                         }
                         nav,
-                        .teams-container {
+                        .teams-container,
+                        .sponsors-img-container {
                             flex-direction: column;
                         }
                     }
